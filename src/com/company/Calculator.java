@@ -3,30 +3,30 @@ package com.company;
 /**
  * Created by natalynka on 10/25/15.
  */
-public class Calculator { //Создаем публичный класс Calculator
+public class Calculator { //РЎРѕР·РґР°РµРј РїСѓР±Р»РёС‡РЅС‹Р№ РєР»Р°СЃСЃ Calculator
 
-    public int calculate(int first, int second, String operation) {//Объявляем метод с тремя параметрами
+    public int calculate(int first, int second, String operation) {//РћР±СЉСЏРІР»СЏРµРј РјРµС‚РѕРґ СЃ С‚СЂРµРјСЏ РїР°СЂР°РјРµС‚СЂР°РјРё
 
-        if (operation == null) { //Проверяем введен ли оператор, если нет, то
-            throw new IllegalArgumentException(Constants.ERROR_NULL_OPERATION);//Выводим в консоль Operation must not be null
+        if (operation == null) { //РџСЂРѕРІРµСЂСЏРµРј РІРІРµРґРµРЅ Р»Рё РѕРїРµСЂР°С‚РѕСЂ, РµСЃР»Рё РЅРµС‚, С‚Рѕ
+            throw new IllegalArgumentException(Constants.ERROR_NULL_OPERATION);//Р’С‹РІРѕРґРёРј РІ РєРѕРЅСЃРѕР»СЊ Operation must not be null
         }
 
-        operation = operation.trim();//Убираем пробелы
+        operation = operation.trim();//РЈР±РёСЂР°РµРј РїСЂРѕР±РµР»С‹
 
-        if (operation.length() != 1) {//Проверяем, если оператор состоит из больше, чем один знак
-            throw new IllegalArgumentException(Constants.ERROR_UNSUPPORTED_OPERATION);//Выводим в консоль Unsupported operation
+        if (operation.length() != 1) {//РџСЂРѕРІРµСЂСЏРµРј, РµСЃР»Рё РѕРїРµСЂР°С‚РѕСЂ СЃРѕСЃС‚РѕРёС‚ РёР· Р±РѕР»СЊС€Рµ, С‡РµРј РѕРґРёРЅ Р·РЅР°Рє
+            throw new IllegalArgumentException(Constants.ERROR_UNSUPPORTED_OPERATION);//Р’С‹РІРѕРґРёРј РІ РєРѕРЅСЃРѕР»СЊ Unsupported operation
         }
 
-        switch (operation.charAt(0)) {//Проверяем переданный operator
-            case '+':// если +, то производим сложение
+        switch (operation.charAt(0)) {//РџСЂРѕРІРµСЂСЏРµРј РїРµСЂРµРґР°РЅРЅС‹Р№ operator
+            case '+':// РµСЃР»Рё +, С‚Рѕ РїСЂРѕРёР·РІРѕРґРёРј СЃР»РѕР¶РµРЅРёРµ
                 return first + second;
-            case '-':// и т.д
+            case '-':// Рё С‚.Рґ
                 return first - second;
             case '/':
                 return first / second;
             case '*':
                 return first * second;
-            default:// если оператор не соответствует ни одному из проверенных, то выводим ошибку
+            default:// РµСЃР»Рё РѕРїРµСЂР°С‚РѕСЂ РЅРµ СЃРѕРѕС‚РІРµС‚СЃС‚РІСѓРµС‚ РЅРё РѕРґРЅРѕРјСѓ РёР· РїСЂРѕРІРµСЂРµРЅРЅС‹С…, С‚Рѕ РІС‹РІРѕРґРёРј РѕС€РёР±РєСѓ
                 throw new IllegalArgumentException(Constants.ERROR_UNSUPPORTED_OPERATION);
         }
     }

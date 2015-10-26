@@ -5,7 +5,7 @@ package com.company;
 /**
  * Created by natalynka on 10/25/15.
  */
-public class Constants {//создаем класс Constants
+public class Constants {//СЃРѕР·РґР°РµРј РєР»Р°СЃСЃ Constants
 
     public static final String FIRST_NUMBER = "Enter first number";
     public static final String SECOND_NUMBER = "Enter second number";
