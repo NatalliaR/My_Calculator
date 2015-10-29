@@ -12,7 +12,6 @@ public class Constants {//создаем класс Constants
     public static final String RESULT = "The result is: ";
     public static final String ANSWER_YES = "y";
     public static final String QUESTION_CONTINUE = "Do you want to continue? (y/n)";
-    public static final String ERROR_MESSAGE = "Error: ";
     public static final String ERROR_UNSUPPORTED_OPERATION = "Unsupported operation";
     public static final String ERROR_NULL_OPERATION = "Operation must not be null";
 
