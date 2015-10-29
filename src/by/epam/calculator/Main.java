@@ -32,7 +32,7 @@ public class Main { //Создаем публичный класс Main
                 break;
             }
         }
-        
+
     }
 }
 

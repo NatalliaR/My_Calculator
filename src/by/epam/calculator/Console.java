@@ -7,7 +7,7 @@ import java.util.Scanner;
  */
 public class Console {
 
-    Scanner scanner = new Scanner(System.in); // —оздаем экземпл€р класса Scanner, который будет считывать вводимые данные
+    Scanner scanner = new Scanner(System.in);
 
     public int readNumber() {
         return scanner.nextInt();
